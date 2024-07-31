@@ -10,6 +10,7 @@ const AddProduct = () => {
     price: "",
     details: "",
     photo: "",
+  
   });
 
   const dispatch = useDispatch();
@@ -24,6 +25,7 @@ const AddProduct = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(formData)
     dispatch(addProduct(formData));
   };
 

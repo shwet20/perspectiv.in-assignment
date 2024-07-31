@@ -12,7 +12,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="app">
+    <div className="app flex flex-col justify-center p-5 px-20">
       <VideoComponent ref={videoRef} />
       <SeekComponent onSeek={handleSeek} />
     </div>
